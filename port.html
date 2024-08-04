@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatabile" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekhana_portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>web Designer / Developer </p>
+            <h1>Hi,I'm <span>Lekhana yanamadni</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+<!---------about------->
+
+<div id="about">
+    <div class="container">
+        <div class="rows">
+            <div class="about-col-1">
+                <img src="pp.png" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I'm Lekhana yanamadni, a passionate and dedicated web developer with the strong basis of html,css,javascriptand bootstrap.And designed many responsive and useful websites.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    <p class="tab-links" onclick="opentab('subjects')">subjects </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Frontend </span><br>Designed some nice responsive websites</li>
+                        <li><span> Web Applications </span><br> BuildsWebsite</li>
+                        <li><span> App development </span><br>Deveolped applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> Engineering</span><br>Computer Science engineering in RGUKT IIIT NUZVID</li>
+                        <li><span> Webinar </span><br>Attended some useful webinars</li>
+                        <li><span>Other courses </span><br>have done other courses in online platforms</li>
+                    </ul>
+                 </div>   
+                    <div class="tab-contents" id="subjects">
+                        <ul>
+                            <li><span>frontend</span><br>html,css,java script,botstrap</li>
+                            <li><span> languages  </span><br>C,java,python </li>
+                            <li><span> Data Structures </span><br>Data Structures using C and Python </li>
+                        </ul>
+                    </div>    
+           </div>
+        </div>
+    </div>
+</div>
+<!-----------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="todo.png">
+                <div class="layer">
+                    <h3>To-Do list</h3><br>
+                    <p> This is a website os to-do list using html,css and js .Where we can use it for the purpose of tracking our day to day works</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #ecebf3;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="quiz.png">
+                <div class="layer">
+                    <h3>Quizz</h3><br>
+                    <p> THis is a website of Quiz app using html,css and js .Where we can use it for creating our own quiz and use it for knowledge test</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #ecebf3;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="food.png">
+                <div class="layer">
+                    <h3>Food ordering Website</h3><br>
+                    <p> THis is a website of food ordering using html,css and js .Where we can use it for food ordering nearby </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #ecebf3;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+<!-----------------Contact--------------->
+<div id="contact">
+    <div class="contaier">
+        <div class="rows">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>lekhanayanamadni@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6305232922</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                 <a href="images/my cv.pdf.txt" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                 <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="contact@email.com" required>
+                     <textarea name="Message" rows="6" placeholder="Your message for me "></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Lekhana . Made with<i class="fa-solid fa-heart"></i> by Lekhana  Yanamadni
+        </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
